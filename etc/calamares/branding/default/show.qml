@@ -42,14 +42,7 @@ Presentation
         anchors.fill: parent
     	}
 
-    Text {
-        anchors.horizontalCenter: background1.horizontalCenter
-        anchors.top: background1.bottom
-        text: "Custom-Archlinux will be installed"
-        wrapMode: Text.WordWrap
-        width: presentation.width
-        horizontalAlignment: Text.Center
-    	}
+    
     }
 
     
