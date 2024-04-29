@@ -1,7 +1,7 @@
 pkgname=custom-archlinux-calamares-config
 _destname1="/etc"
 pkgver=24.05
-pkgrel=1
+pkgrel=2
 pkgdesc="calamares for Custom Archlinux"
 arch=('any')
 url="https://github.com/amanre"
