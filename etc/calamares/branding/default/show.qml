@@ -45,37 +45,14 @@ Presentation
     Text {
         anchors.horizontalCenter: background1.horizontalCenter
         anchors.top: background1.bottom
-        text: "Welcome to"
+        text: "Custom-Archlinux will be installed"
         wrapMode: Text.WordWrap
         width: presentation.width
         horizontalAlignment: Text.Center
     	}
     }
 
-    Slide {
-
-    anchors.fill: parent
-    anchors.verticalCenterOffset: 0
-
-    Image {
-        id: background2
-        source: "2-alci.png"
-        width: parent.width; height: parent.height
-        verticalAlignment: Image.AlignTop
-        fillMode: Image.Stretch
-        anchors.fill: parent
-    	}
-
-    Text {
-        anchors.horizontalCenter: background2.horizontalCenter
-        anchors.top: background2.bottom
-        text: "ALCI"
-        wrapMode: Text.WordWrap
-        width: presentation.width
-        horizontalAlignment: Text.Center
-    	}
-    }
-
+    
 
     // When this slideshow is loaded as a V1 slideshow, only
     // activatedInCalamares is set, which starts the timer (see above).
