@@ -1,7 +1,7 @@
 pkgname=amoslinux-calamares-config
 _destname1="/etc"
 pkgver=24.05
-pkgrel=02
+pkgrel=03
 pkgdesc="calamares for Amos"
 arch=('any')
 url="https://github.com/amanre"
