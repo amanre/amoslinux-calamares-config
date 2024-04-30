@@ -4,7 +4,7 @@ destination1=$HOME"/CUSTOM/custom_repo/x86_64/"
 
 destiny=$destination1
 
-search1="custom-archlinux-calamares"
+search1="amoslinux-calamares-config"
 search=$search1
 
 tput setaf 2
@@ -26,7 +26,7 @@ echo "##########################################################################
 echo "deleting unnecessary folders"
 echo "#############################################################################################"
 
-rm -rf pkg src custom-archlinux-calamares-config*
+rm -rf pkg src amoslinux-calamares-config*
 
 echo "deleting unnecessary files"
 echo "#############################################################################################"

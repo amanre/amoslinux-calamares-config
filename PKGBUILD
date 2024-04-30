@@ -1,14 +1,13 @@
-pkgname=custom-archlinux-calamares-config
+pkgname=amoslinux-calamares-config
 _destname1="/etc"
 pkgver=24.05
-pkgrel=3
-pkgdesc="calamares for Custom Archlinux"
+pkgrel=01
+pkgdesc="calamares for Amos"
 arch=('any')
 url="https://github.com/amanre"
 license=('GPL3')
 makedepends=('git')
 depends=()
-#conflicts=('alci-calamares-config' 'alci-calamares-config-pure' 'alci-calamares-config-btrfs')
 provides=("${pkgname}")
 options=(!strip !emptydirs)
 source=(${pkgname}::"git+${url}/${pkgname}")
