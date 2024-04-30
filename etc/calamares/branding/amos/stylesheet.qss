@@ -22,53 +22,70 @@ using `QComboBox` as a selector).
 This example stylesheet has all the actual styling commented out.
 The examples are not exhaustive.
 
+Use gammaray
+
 */
 
 
 /* ########## MAIN APPLICATION WINDOW ########## */
 
-#mainApp {
-}
-
 #mainText{
 	font : bold 16px;
 }
 
-#sidebarApp {
-
-}
-
-#logoApp {
-}
-
 #sidebarMenuApp {
 	padding: 3px;
-	background-color: #292F34;
+	background-color: #0C163A;
 }
 
 QWidget {
 	font: 16px;
 }
 
-QTextEdit, QListView {
-}
-QDialogButtonBox {
-}
-QAbstractSpinBox {
-}
-QListWidget::item:alternate {
-}
 
+#view-button-back:hover {
+	color: #58B2D7;
+}
+#view-button-next:hover {
+	color: #58B2D7;
+}
+#view-button-cancel:hover {
+	color: #58B2D7;
+}
 
 #debugButton {
 	font: bold 8px;
 	color: #FFFFFF;
 }
+#debugButton:hover {
+	color: #58B2D7;
+}
 
+#aboutButton:hover {
+	color: #58B2D7;
+}
+#donateButton:hover {
+	color: #58B2D7;
+}
+#supportButton:hover {
+	color: #58B2D7;
+}
+#knownIssuesButton:hover {
+	color: #58B2D7;
+}
+#releaseNotesButton:hover {
+	color: #58B2D7;
+}
 
 /* ########## TOOLTIP ########## */
 
-
+QToolTip {
+	background-color: #58B2D7;
+  font : 16px;
+	color: white;
+	padding: 3px;
+	border: none;
+}
 
 QPushButton {
     font : 16px;
@@ -78,12 +95,76 @@ QDialogButtonBox {
 	dialogbuttonbox-buttons-have-icons: 0;
 }
 
+/* ########## SCROLL BAR ########## */
+
+QScrollBar:vertical {
+     background: #efefef;
+     width: 20px;
+     margin: 38px 0 20px 0;
+}
+
+QScrollBar::handle:vertical {
+     background: #58B2D7;
+     max-height: 25px;
+}
+
+QScrollBar::sub-line:vertical {
+     border: none;
+     background: none;
+     height: 20px;
+     subcontrol-position: top;
+     subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:vertical {
+     border: none;
+     background: none;
+     height: 20px;
+     subcontrol-position: bottom;
+     subcontrol-origin: margin;
+}
 
 /* ########## QLIST VIEW ########## */
 
 QListView {
 		font: 16px;
 }
+
+QListView::item:alternate {
+	color: #58B2D7;
+	color: black;
+}
+
+QListView::item:!alternate:selected:active {
+	background: #58B2D7;
+	color: white;
+}
+
+QListView::item:selected:active {
+	background: #58B2D7;
+	color: white;
+}
+
+QListView::item:selected:!active {
+	background: #58B2D7;
+	color: white;
+}
+
+QListView::item:hover {
+	background: #58B2D7;
+	color: white;
+}
+
+QListView#listLayout::item:!alternate:selected:active {
+	background: #58B2D7;
+	color: white;
+}
+
+QListView#listVariant::item:!alternate:selected:active {
+	background: #58B2D7;
+	color: white;
+}
+
 
 
 /* ########## QLINE EDIT ########## */
@@ -206,6 +287,11 @@ QComboBox {
 	font: 16px;
 }
 
+QComboBox::item:selected {
+	background: #58B2D7;
+	color: white;
+}
+
 #mountPointComboBox::drop-down {
 	font: 16px;
 }
@@ -231,29 +317,11 @@ QTreeView::item {
 	padding: 2px;
 }
 
-QTreeView::branch:has-siblings:!adjoins-item {
-}
-QTreeView::branch:has-siblings:adjoins-item {
-}
-QTreeView::branch:!has-children:!has-siblings:adjoins-item {
-}
-QTreeView::branch:has-children:!has-siblings:closed,
-QTreeView::branch:closed:has-children:has-siblings {
-}
-QTreeView::branch:open:has-children:!has-siblings,
-QTreeView::branch:open:has-children:has-siblings  {
+QTreeView::item:selected {
+	background: #58B2D7;
+	font: bold;
 }
 
-/* ########## CHECK BOX ########## */
-
-QCheckBox {
-}
-QCheckBox::indicator:unchecked {
-}
-QCheckBox::indicator:checked {
-}
-QItemSelectionModel::Select {
-}
 
 /* ########## HEADER VIEW ########## */
 
@@ -261,22 +329,20 @@ QHeaderView::section {
   font : 16px;
 }
 
+/* ########## PROGRESS BAR ########## */
+
+QProgressBar {
+	text-align: center;
+}
+
+QProgressBar::chunk {
+	background-color: #58B2D7;
+}
+
 #debugButton {
-	background-color: none;
-	font: 12px;
-	color: #edecf0;
-  height: 32px;
-  border: none;
+	font: bold 8px;
+	color: #353945;
 }
-
 #debugButton:hover {
-	color: #ff7f7f;
-}
-
-#aboutButton {
-	background-color: none;
-	font: 12px;
-	color: #edecf0;
-  height: 32px;
-  border: none;
+	color: #353945;
 }

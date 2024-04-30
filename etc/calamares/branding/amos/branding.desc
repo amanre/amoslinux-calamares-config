@@ -8,7 +8,7 @@
 # Additional styling can be done using the stylesheet.qss
 # file, also in the branding directory.
 ---
-componentName:  default
+componentName:  amos
 
 
 ### WELCOME / OVERALL WORDING
@@ -48,7 +48,7 @@ windowExpanding:    normal
 # This setting is ignored if "fullscreen" is selected for
 # *windowExpanding*, above. If not set, use constants defined
 # in CalamaresUtilsGui, 800x520.
-windowSize: 1024px,735px
+windowSize: 1111px,676px
 
 # Placement of Calamares window. Either "center" or "free".
 # Whether "center" actually works does depend on the window
@@ -121,13 +121,18 @@ navigation: widget
 # are visible as buttons there if the corresponding *show* keys
 # are set to "true" (they can also be overridden).
 strings:
-    productName:         ARCH
-    shortProductName:    ARCH
-    version:             2023.01.1
-    shortVersion:        2023.01.1
-    versionedName:       ARCH
-    shortVersionedName:  ARCH
-    bootloaderEntryName: Arch
+    productName:         AmOs Linux
+    shortProductName:    AmOs Linux
+    version:             2024-05.1
+    shortVersion:        2024.05
+    versionedName:       AmOs Linux
+    shortVersionedName:  AmOs Linux
+    bootloaderEntryName: Generic
+    #productUrl:          https://calamares.io/
+    #supportUrl:          https://github.com/calamares/calamares/wiki
+    #knownIssuesUrl:      https://github.com/calamares/calamares/issues
+    #releaseNotesUrl:     https://calamares.io/news/
+    #donateUrl:           https://kde.org/community/donations/index.php
 
 # These images are loaded from the branding module directory.
 #
@@ -158,10 +163,11 @@ strings:
 # These filenames can also use substitutions from os-release (see above).
 images:
     # productBanner:       "banner.png"
-    productIcon:         "squid.png"
-    productLogo:         "squid.png"
-    # productWallpaper:    "wallpaper.png"
-    productWelcome:      "alci.png"
+    productIcon:         "install.png"
+    productLogo:         "logo.png"
+    productWallpaper:    "wallpaper.png"
+    productWallpaper:    "wallpaper.png"
+    productWelcome:      "icon.png"
 
 # Colors for text and background components.
 #
@@ -175,8 +181,13 @@ images:
 # branding component also ships a stylesheet.qss. Then they are
 # the corresponding CSS attributes of #sidebarApp.
 style:
-   SidebarBackground:    "#292F34"
-   SidebarText:          "#FFFFFF"
+   sidebarBackground:    "#050035"
+   sidebarText:          "#FFFFFF"
+   sidebarTextSelect:    "#6C0050"
+   sidebarTextHighlight: "#A80050 "
+   #sidebarTextHighlight: #A76ED7"
+   #--strong orange
+   #sidebarTextHighlight: "#363592"
 
 ### SLIDESHOW
 #
@@ -223,3 +234,4 @@ slideshowAPI: 2
 uploadServer :
     type :    "fiche"
     url :     "http://termbin.com:9999"
+    sizeLimit : -1
